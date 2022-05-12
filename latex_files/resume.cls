@@ -9,9 +9,9 @@
 % Original header:
 % Copyright (C) 2010 by Trey Hunner
 %
-% Copying and distribution of this file, with or without modification,
-% are permitted in any medium without royalty provided the copyright
-% notice and this notice are preserved. This file is offered as-is,
+% Copying and distributing this file, with or without modification,
+% is permitted in any medium without royalty, provided the copyright
+% notice, and this notice is preserved. This file is offered as-is,
 % without any warranty.
 %
 % Created by Trey Hunner and modified by www.LaTeXTemplates.com
@@ -179,8 +179,8 @@
 
 \newenvironment{taSubsectionFull}[6]{ % 4 input arguments - company name, year(s) employed, job title and location
 	{\bf #1} \hfill {#2} \\ % Bold company name and date on the right
-	{\em #3} \hfill {\em #4} \\ % Italic job title and location
-	{\em #5} \hfill {\em #6} \\ % Italic job title and location
+	{\em #3} \hfill {\sc #4} \\ % Italic job title and location
+	{\em #5} \hfill {\sc #6} \\ % Italic job title and location
 	\smallskip
 	\vspace{-1.5em} % Some space after the list of bullet points
 }
@@ -189,8 +189,8 @@
  {\bf #1} \hfill {#2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
-  {\em #3} \hfill {\em #4} \\ % Italic job title and location
-  {\em #5} \hfill {\em #6} % Italic job title and location
+  {\em #3} \hfill {\sc #4} \\ % Italic job title and location
+  {\em #5} \hfill {\sc #6} % Italic job title and location
   }\smallskip
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
@@ -218,7 +218,7 @@
 
 \newenvironment{aSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} \hfill {#2} \\ % Bold company name and date on the right
- {\em #3} \hfill {\em #4} \\
+ {\em #3} \hfill {\bf #4} \\
  \vspace{-1em}
 }
 
