@@ -1,0 +1,96 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume}
+
+
+%\name{\givenname \surname}
+%\name{\givenname \middlename \surname}
+%\name{Alun Cennyth Stokes}
+\name{Alun C. Stokes}
+\address{Hamilton, Ontario}
+\address{(647)-287-2418 | stokea1@mcmaster.ca}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{%
+  colorlinks=false,% hyperlinks will be black
+  linkbordercolor=red,% hyperlink borders will be red
+  pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+}
+\usepackage[left=0.75in, top=0.75in, right=0.75in, bottom=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+    %t\fancyfoot{\thepage}
+    \lhead{Stokes, A.}
+    \pagestyle{fancy}
+    
+\thispagestyle{plain}
+\thispagestyle{empty} 
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\comment}[1]{}
+%\pagestyle{fancy}
+\pagestyle{plain}
+\pagestyle{empty}
+\vspace{-0.02em}
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+
+\input{sections/research-interests}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\input{sections/education}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\input{sections/publications}
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT
+%----------------------------------------------------------------------------------------
+
+\input{sections/work}
+
+%----------------------------------------------------------------------------------------
+%	TALKS
+%---------------------------------------------------------------------------------------
+
+\input{sections/talks}
+
+%----------------------------------------------------------------------------------------
+%	TEACHING ASSISTANTSHIPS
+%----------------------------------------------------------------------------------------
+
+\input{sections/ta} 
+\vspace{2.5em}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\input{sections/projects}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+
+\input{sections/skills}
+
+%----------------------------------------------------------------------------------------
+%	GRANTS AND AWARDS
+%----------------------------------------------------------------------------------------
+
+\input{sections/grants}
+
+\end{document}
