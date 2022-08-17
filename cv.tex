@@ -4,6 +4,11 @@
 
 \documentclass{resume}
 
+%\usepackage{tgpagella}
+\usepackage[T1]{fontenc}
+
+\usepackage[none]{hyphenat}
+
 \usepackage[
     linkcolor=blue,
     urlcolor=blue,
@@ -11,14 +16,22 @@
 ]{hyperref}
 \usepackage[dvipsnames]{xcolor}
 
-\usepackage{xspace}
+%\input{glyphtounicode}
+%\pdfgentounicode=1
 
-\sloppy
+\usepackage{xspace}
+\usepackage{textcomp}
+
+\newcommand{\midapprox}{\raisebox{0.5ex}{\texttildelow}}
+
+\setlength{\headheight}{13.59999pt}
+
+%\sloppy
 
 \def\givenname{Alun\xspace}
 \def\surname{Stokes\xspace}
 \def\middlename{Cennyth\xspace}
-\def\middleinitial{C.\xspace}
+\def\middleinitial{C\xspace}
 \def\phone{+1 (647)-287-2418\xspace}
 \def\workemail{stokea1@mcmaster.ca\xspace}
 \def\personalemail{alunsto99@gmail.com\xspace}
@@ -31,8 +44,8 @@
 \definecolor{background_sand}{HTML}{e0dfde}
 \definecolor{text_grey}{HTML}{212121}
 %\definecolor{text_grey}{HTML}{393939}
-\pagecolor{background_sand}
-\color{text_grey}
+%\pagecolor{background_sand}
+%\color{text_grey}
 
 \usepackage[left=0.75in, top=0.75in, right=0.75in, bottom=0.6in]{geometry}
 \usepackage{enumitem}
@@ -58,8 +71,6 @@
 
 \begin{document}
 
-
-
 %----------------------------------------------------------------------------------------
 %	RESEARCH INTERESTS
 %----------------------------------------------------------------------------------------
@@ -79,6 +90,12 @@
 \input{sections/publications}
 
 %----------------------------------------------------------------------------------------
+%	EMPLOYMENT
+%----------------------------------------------------------------------------------------
+
+\input{sections/work}
+
+%----------------------------------------------------------------------------------------
 %	GRANTS AND AWARDS
 %----------------------------------------------------------------------------------------
 
@@ -91,16 +108,16 @@
 \input{sections/ta} 
 
 %----------------------------------------------------------------------------------------
-%	EMPLOYMENT
-%----------------------------------------------------------------------------------------
+%	INVITED TALKS
+%---------------------------------------------------------------------------------------
 
-\input{sections/work}
+\input{sections/invited-talks}
 
 %----------------------------------------------------------------------------------------
 %	TALKS
 %---------------------------------------------------------------------------------------
 
-\input{sections/talks}
+%\input{sections/talks}
 
 %----------------------------------------------------------------------------------------
 %	TECHNICAL SKILLS
@@ -115,10 +132,16 @@
 \input{sections/projects}
 
 %----------------------------------------------------------------------------------------
+%	PROFESSIONAL ORGANISATIONS
+%----------------------------------------------------------------------------------------
+
+%\input{sections/professsional-orgs}
+
+%----------------------------------------------------------------------------------------
 %	REFERENCES
 %----------------------------------------------------------------------------------------
 
-\input{sections/references}
+%\input{sections/references}
 
 
 

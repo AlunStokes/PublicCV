@@ -117,6 +117,11 @@
 
 }
 
+\newenvironment{rSubsectionSmall}[2]{ % 2 input arguments 
+ {\bf #1} \hfill {\em #2} \\ % Bold company name and date on the right
+ \vspace{-1.5em}
+}
+
 
 \newenvironment{rSubsectionBullets}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} \hfill {#2} \\ % Bold company name and date on the right
